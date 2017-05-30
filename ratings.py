@@ -10,7 +10,7 @@ def restaurant_rating(file_name):
             restaurant_ratings[data[0]] = int(data[1])
 
     new_restaurant = (raw_input("Enter a restaurant name: ")).capitalize()
-    new_rating = raw_input("Enter a restaurante rating: ")
+    new_rating = raw_input("Enter a restaurant rating: ")
     restaurant_ratings[new_restaurant] = int(new_rating)
 
     for restaurant, rating in sorted(restaurant_ratings.items()):
